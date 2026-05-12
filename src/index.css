@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 40% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 13%;
+
+    --primary: 220 40% 13%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 20% 96%;
+    --secondary-foreground: 220 40% 13%;
+
+    --muted: 216 15% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 42 75% 50%;
+    --accent-foreground: 220 40% 13%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 40% 13%;
+
+    --radius: 0.5rem;
+
+    --navy: 220 40% 13%;
+    --navy-light: 220 30% 22%;
+    --navy-dark: 220 45% 8%;
+    --gold: 42 75% 50%;
+    --gold-light: 42 70% 92%;
+    --surface: 220 14% 97%;
+    --surface-elevated: 0 0% 100%;
+
+    --sidebar-background: 220 40% 13%;
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 42 75% 50%;
+    --sidebar-primary-foreground: 220 40% 13%;
+    --sidebar-accent: 220 30% 18%;
+    --sidebar-accent-foreground: 220 10% 90%;
+    --sidebar-border: 220 30% 20%;
+    --sidebar-ring: 42 75% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  .container-gov {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}

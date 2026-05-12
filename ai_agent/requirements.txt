@@ -1,0 +1,23 @@
+langchain>=0.3.0
+langgraph>=0.2.0
+langsmith>=0.1.0
+langchain-openai>=0.2.0
+supabase>=2.0.0
+python-dotenv>=1.0.0
+fastapi>=0.110.0
+uvicorn>=0.29.0
+
+# RAG textbook system
+pypdf>=4.0.0
+PyMuPDF>=1.24.0
+
+# Local embeddings (default backend = BGE-M3, fully free, GPU-accelerated when CUDA is available)
+sentence-transformers>=3.0.0
+
+# Textbook ingestion: OCR (+ Tesseract ara/eng binaries), optional Docling Markdown
+ocrmypdf>=16.0.0
+docling>=2.15.0
+
+# Optional cloud embedding backends
+google-genai>=1.50.0   # set RAG_EMBEDDING_BACKEND=gemini to use
+# openai is already pulled in by langchain-openai
